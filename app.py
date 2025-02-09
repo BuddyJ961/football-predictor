@@ -88,4 +88,4 @@ if __name__ == '__main__':
     if match_data:
         df_matches = process_match_data(match_data)
         result_model = train_prediction_model(df_matches)
-    app.run(debug=True)
+    app.run(host='0.0.0.0', port=5000)
